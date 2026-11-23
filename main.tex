@@ -10,8 +10,8 @@
 \geometry{a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{booktabs}
-\usepackage{longtable}
+\theoremstyle{definition}
+\newtheorem{example}{Contoh}
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{xcolor}
@@ -48,8 +48,8 @@
 % ========================
 % BIBLIOGRAPHY
 % ========================
-\usepackage[style=apa,backend=biber]{biblatex}
-\addbibresource{references.bib}
+% \usepackage[style=apa,backend=biber]{biblatex}
+% \addbibresource{references.bib}
 
 % ========================
 % CUSTOM COMMANDS
@@ -340,14 +340,16 @@ Jawaban Putri dapat dilihat pada Gambar \ref{fig:putri1} dan Gambar \ref{fig:put
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{gambar1.jpg}
+% \includegraphics[width=0.7\textwidth]{gambar1.jpg}
+\fbox{\parbox[c][6cm][c]{0.7\textwidth}{\centering\itshape Gambar tidak tersedia}}
 \caption{Halaman 1 Jawaban Putri}
 \label{fig:putri1}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{gambar2.jpg}
+% \includegraphics[width=0.7\textwidth]{gambar2.jpg}
+\fbox{\parbox[c][6cm][c]{0.7\textwidth}{\centering\itshape Gambar tidak tersedia}}
 \caption{Halaman 2 Jawaban Putri}
 \label{fig:putri2}
 \end{figure}
@@ -366,14 +368,16 @@ Jawaban tidak lengkap dapat dilihat pada Gambar \ref{fig:tidaklengkap1} dan Gamb
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{gambar3.jpg}
+% \includegraphics[width=0.7\textwidth]{gambar3.jpg}
+\fbox{\parbox[c][6cm][c]{0.7\textwidth}{\centering\itshape Gambar tidak tersedia}}
 \caption{Jawaban Tidak Lengkap (Tanpa Nama)}
 \label{fig:tidaklengkap1}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{gambar4.jpg}
+% \includegraphics[width=0.7\textwidth]{gambar4.jpg}
+\fbox{\parbox[c][6cm][c]{0.7\textwidth}{\centering\itshape Gambar tidak tersedia}}
 \caption{Jawaban Tidak Lengkap (Nur Annisa)}
 \label{fig:tidaklengkap2}
 \end{figure}
@@ -491,7 +495,6 @@ Berdasarkan pembahasan di atas, dapat disimpulkan bahwa:
 % =====================================================
 % DAFTAR PUSTAKA
 % =====================================================
-\backmatter
-\printbibliography[title={Daftar Pustaka}]
+% \printbibliography[title={Daftar Pustaka}]
 
 \end{document}
